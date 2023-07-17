@@ -9,6 +9,7 @@
 	*{
 		margin: 0px;
 		padding: 0px;
+		transition:0.5s;
 		
 	}
 	.bci{
@@ -67,6 +68,7 @@
 	@media only screen and (max-width:700px){
 		ul li{
 			display: block;
+			background-color: black;
 		}
 		#logo{
 			display: block;
@@ -76,6 +78,9 @@
 		#btn{
 			margin: 20px;
 			display: block;
+		}
+		#box{
+			display: none;
 		}
 	}
 	
@@ -112,8 +117,6 @@
 		
 		var mybtn = document.getElementById("btn");
 		var navigation = document.getElementById("list");
-		
-
 
 		function myfun(){
 
@@ -124,6 +127,19 @@
 		}
 
 		}
+
+		class car {
+			constructor(name , color , prise){
+				this.name=name;
+				this.color=color;
+				this.prise=prise;
+			}
+		}
+		var mycar1 = new car ("volvo" ,"white", 15000000);
+		var mycar2 = new car ("BMW" ,"black", 7000000);
+
+		console.log(mycar1);
+
 	</script>
 </body>
 </html>
